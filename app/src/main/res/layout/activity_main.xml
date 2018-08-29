@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.MainActivity">
+
+    <EditText
+        android:id="@+id/usd"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_centerHorizontal="true"
+        android:inputType=""
+        android:hint="Please enter the value (dollar)"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/vnd"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Please enter the value (dong)"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:inputType="" />
+
+    <Button
+        android:background="@drawable/custom"
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/usd"
+        android:onClick="click"
+        android:text="USD ----> VND"
+        tools:ignore="HardcodedText,OnClick" />
+
+    <Button
+        android:background="@drawable/custom"
+        android:id="@+id/submit2"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/vnd"
+        android:onClick="click2"
+        android:text="VND ----> USD"
+        tools:ignore="HardcodedText,OnClick" />
+
+    <Button
+        android:background="@drawable/button_reset"
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/submit2"
+        android:layout_marginTop="24dp"
+        android:onClick="reset"
+        android:text="RESET"
+        tools:ignore="HardcodedText,OnClick" />
+
+
+</RelativeLayout>
